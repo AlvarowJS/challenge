@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Gilded Rose kata in TypeScript",
   "scripts": {
-    "compile": "tsc"
+    "compile": "tsc",
+    "dev": "ts-node app/src/index.ts -b 7 -s",
+    "test": "mocha --require ts-node/register app/test/**/*.spec.ts"
   },
   "license": "MIT",
   "private": true,
